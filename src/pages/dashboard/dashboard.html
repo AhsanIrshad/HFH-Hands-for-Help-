@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+
+  <ion-card>
+    <img src="./assets/imgs/social.jpg" (click)="
+    Push()"/>
+    <div class="card-title">Social</div>
+    <div class="card-subtitle">1 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="./assets/imgs/financial.jpeg" (click)="
+    Push()" />
+    <div class="card-title">Financial</div>
+    <div class="card-subtitle">3 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="./assets/imgs/ethical.jpg" (click)="
+    Push()" />
+    <div class="card-title">Ethical</div>
+    <div class="card-subtitle">4 Listings</div>
+
+    <button ion-button color="primary" block (click)="Add()" >Add Cause</button>
+  </ion-card>
+
+  
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-content class="background">
+  <h1 class="heading">HANDS FOR HELP</h1>
+	<ion-card>
+		<ion-card-header>
+			Sign Up Form
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list no-line>
+          <ion-item>
+              <ion-input type="text" placeholder="Full Name"></ion-input>
+            </ion-item>
+				<ion-item>
+					<ion-input type="text" placeholder="Username"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="label">Gender</ion-label>
+           <ion-select class="birthdaycolor" [(ngModel)]="gender">
+            <ion-option value="f">Female</ion-option>
+            <ion-option value="m">Male</ion-option>
+          </ion-select>
+        </ion-item>
+         <ion-item>
+          <ion-label class="birthdaycolor">Birthday</ion-label>
+          <ion-datetime class="birthdaycolor" displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+        </ion-item>
+        
+        <ion-item>
+					<ion-input type="Email" placeholder="john@gmail.com"></ion-input>
+				</ion-item>
+        <ion-item>
+          <ion-input type="number" placeholder="PhoneNumber"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="number" placeholder="NIC no."></ion-input>
+          </ion-item>
+
+        <ion-item>
+            <ion-textarea placeholder="Address"></ion-textarea>
+          </ion-item>
+          <button ion-button block outline color="light">Sign Up</button>
+				
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+	
+</ion-content>

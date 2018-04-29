@@ -1,0 +1,55 @@
+<!--
+  Generated template for the AddCausePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>AddCause</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+
+  	<ion-card-content>
+
+        <ion-list no-line>
+          <ion-item>
+            <ion-input type="text" placeholder="Enter Cause Name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-input type="text" placeholder="Enter Creater Name"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Cause Type</ion-label>
+                <ion-select multiple="False">
+                  <ion-option>Social</ion-option>
+                  <ion-option>Ethical</ion-option>
+                  <ion-option>Financial</ion-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-input type="number" placeholder="Enter Charity Amount"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-textarea placeholder="Enter Cause Details"></ion-textarea>
+                </ion-item>
+                <ion-item>
+                    <ion-title>Publish on Social Media</ion-title>
+                  </ion-item>
+
+                <button ion-button block color="facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </button>
+        
+                  <button ion-button block color="twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </button>
+
+                  <button ion-button color="primary" block ng-click="showAlert()" >Publish Cause</button>
+          
+        </ion-list>
+      </ion-card-content>
+    </ion-content>

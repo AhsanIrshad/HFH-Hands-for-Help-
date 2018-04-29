@@ -1,0 +1,15 @@
+page-add-cause {
+        .scroll-content{
+            align-content: center; 
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        ion-card.card {
+            align-content: center;
+            box-shadow: none;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+}
